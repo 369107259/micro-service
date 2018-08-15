@@ -15,7 +15,7 @@ public class HelloController {
     private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     @Autowired
-    DiscoveryClient discoveryClient;
+    private DiscoveryClient discoveryClient;
 
     @GetMapping("/hello")
     public String hello(){

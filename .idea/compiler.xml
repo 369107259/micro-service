@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lie-server-client" />
+        <module name="lie-server-consumer" />
         <module name="lie-server-eureka" />
       </profile>
     </annotationProcessing>
@@ -14,6 +15,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="lie-server-client" options="-nowarn" />
+      <module name="lie-server-consumer" options="-nowarn" />
       <module name="lie-server-eureka" options="-nowarn" />
       <module name="micro-service" options="-nowarn" />
     </option>
