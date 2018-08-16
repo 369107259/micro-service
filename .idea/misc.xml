@@ -8,7 +8,8 @@
         <option value="$PROJECT_DIR$/lie-server-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/lie-server-client/pom.xml" />
         <option value="$PROJECT_DIR$/lie-server-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/lie-eureka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/lie-eureka-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server-git/pom.xml" />
       </list>
     </option>
   </component>
