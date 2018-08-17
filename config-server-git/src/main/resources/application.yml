@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/369107259/micro-service
-          search-paths: /application  # 配置仓库路径
+          uri: https://github.com/369107259/eureka-server
+          search-paths: lie-server-client  # 配置仓库路径
           basedir: c:\\config # 配置中心远程clone下来的配置文件所在的位置。目录不存在的话，系统会自动创建dir目录。默认情况下，克隆下来的文件保存在C:\Users\<当前用户>\AppData\Local\Temp目录下
       label: master
 server:
