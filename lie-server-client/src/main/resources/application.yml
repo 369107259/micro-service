@@ -1,6 +1,12 @@
 spring:
   application:
     name: lie-server-client
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
 server:
   port: 2001
 eureka:

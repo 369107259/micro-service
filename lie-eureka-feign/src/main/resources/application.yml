@@ -1,6 +1,6 @@
 spring:
   application:
-    name: lie-server-consumer
+    name: lie-server-feign
 server:
   port: 2301
 eureka:
