@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /***
  * @author huangyong
+ * @RefreshScope
  */
-@RefreshScope
+
 @RestController
 public class HelloController {
     private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
@@ -21,8 +22,8 @@ public class HelloController {
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/hello")
-    public String hello(){
-
+    public String hello() throws InterruptedException {
+        Thread.sleep(5000L);
         String services = "services:" + discoveryClient.getServices();
         logger.info(services);
         return services;

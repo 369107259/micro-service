@@ -1,16 +1,9 @@
-#spring:
-#  application:
-#    name: lie-server-client
-#  cloud:
-#    config:
-#      discovery:
-#        enabled: true
-#        service-id: config-server
-#      profile: dev
-#      label: master
+spring:
+  application:
+    name: lie-server-client
 #server:
-#  port: 2001
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:1001/eureka/
+##  port: 2001 2002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
