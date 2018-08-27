@@ -1,8 +1,8 @@
+server:
+  port: 4001
 spring:
   application:
-    name: lie-server-client
-server:
-  port: 2001 # 2002
+    name: api-gateway
 eureka:
   client:
     service-url:

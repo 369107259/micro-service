@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: lie-turbine
+server:
+  port: 3002
+management:
+  port: 3003
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+turbine:
+  app-config: lie-eureka-feign
+  combine-host-port: true
+  cluster-name-expression: "default"

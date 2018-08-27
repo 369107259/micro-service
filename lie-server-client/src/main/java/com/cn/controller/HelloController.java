@@ -23,7 +23,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() throws InterruptedException {
-        Thread.sleep(5000L);
+//        Thread.sleep(5000L);
         String services = "services:" + discoveryClient.getServices();
         logger.info(services);
         return services;

@@ -19,6 +19,7 @@ public class LieServerClientApplication {
 /***
  *SpringApplication.run(LieServerClientApplication.class, args);
  */
+
         System.out.println("请在控制台指定client服务的端口号 —— [端口号随意指定，注意不要与本机端口号出现冲突即可]");
         Scanner scanner = new Scanner(System.in);
         //让用户指定端口号
