@@ -1,6 +1,5 @@
 package com.cn.controller;
 
-import com.cn.client.HelloClient;
 import com.cn.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

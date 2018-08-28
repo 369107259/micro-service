@@ -1,8 +1,7 @@
 package com.cn.service;
 
-import com.cn.client.HelloClient;
+import com.cn.client.IHelloClient;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.ribbon.proxy.annotation.Hystrix;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloService {
     @Autowired
-    private HelloClient helloClient;
+    private IHelloClient helloClient;
 
     @HystrixCommand(fallbackMethod = "fallback")
     public String consumer() {
