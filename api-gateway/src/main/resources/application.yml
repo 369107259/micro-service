@@ -7,3 +7,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1001/eureka/
+zuul:
+  routes:
+    eureka-feign:
+      path: /eureka-feign/**
+      service-id: lie-eureka-feign
+    server-client:
+      path: /server-client/**
+      service-id: lie-server-client
+

@@ -23,12 +23,15 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-nowarn" />
       <module name="config-server-git" options="-nowarn" />
       <module name="lie-eureka-consumer" options="-nowarn" />
       <module name="lie-eureka-feign" options="-nowarn" />
+      <module name="lie-hystrix-dashboard" options="-nowarn" />
       <module name="lie-server-client" options="-nowarn" />
       <module name="lie-server-consumer" options="-nowarn" />
       <module name="lie-server-eureka" options="-nowarn" />
+      <module name="lie-turbine" options="-nowarn" />
       <module name="micro-service" options="-nowarn" />
     </option>
   </component>
