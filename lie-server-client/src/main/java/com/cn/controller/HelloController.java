@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /***
@@ -22,8 +23,9 @@ public class HelloController {
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/hello")
+    @ResponseBody
     public String hello() throws InterruptedException {
-//        Thread.sleep(5000L);
+        Thread.sleep(5000L);
         String services = "services:" + discoveryClient.getServices();
         logger.info(services);
         return services;

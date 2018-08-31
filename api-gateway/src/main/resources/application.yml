@@ -15,4 +15,12 @@ zuul:
     server-client:
       path: /server-client/**
       service-id: lie-server-client
+# 需要设置timeoutInMilliseconds属性，不然的话，hystrix断路器不起作用，页面就会报错（如果配置了timeoutInMilliseconds属性，则会执行我们的断路器回调方法）；同时，值的大小也是有讲究的，一般设置要 >= ribbon的超时时间值
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
 

@@ -9,9 +9,11 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 /***
  * @author
+ * @SpringCloudApplication
  */
 @EnableFeignClients
-@SpringCloudApplication
+@SpringBootApplication
+@EnableDiscoveryClient
 public class LieEurekaFeignApplication {
 
     public static void main(String[] args) {
