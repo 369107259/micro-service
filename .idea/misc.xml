@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/lie-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/lie-turbine/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/lie-zipkin-server/pom.xml" />
       </list>
     </option>
   </component>

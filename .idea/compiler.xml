@@ -14,6 +14,7 @@
         <module name="lie-server-consumer" />
         <module name="lie-server-eureka" />
         <module name="lie-turbine" />
+        <module name="lie-zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="lie-server-consumer" options="-nowarn" />
       <module name="lie-server-eureka" options="-nowarn" />
       <module name="lie-turbine" options="-nowarn" />
+      <module name="lie-zipkin-server" options="-nowarn" />
       <module name="micro-service" options="-nowarn" />
     </option>
   </component>

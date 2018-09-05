@@ -1,9 +1,9 @@
-spring:
-  application:
-    name: lie-server-client
 server:
   port: 2001 # 2002
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:1001/eureka/
+#spring:
+#  zipkin:
+#    base-url: http://localhost:9411

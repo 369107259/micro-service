@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /***
  * @author huangyong
  * @RefreshScope
@@ -24,10 +26,12 @@ public class HelloController {
 
     @GetMapping("/hello")
     @ResponseBody
-    public String hello() throws InterruptedException {
-        Thread.sleep(5000L);
+    public String hello(HttpServletRequest request) throws InterruptedException {
+//        Thread.sleep(5000L);
         String services = "services:" + discoveryClient.getServices();
         logger.info(services);
+        logger.info("===<call trace-2, TraceId={}, SpanId={}>===",
+                request.getHeader("X-B3-TraceId"), request.getHeader("X-B3-SpanId"));
         return services;
     }
 }
