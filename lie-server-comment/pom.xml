@@ -11,11 +11,11 @@
     </parent>
 
     <groupId>com.cn</groupId>
-    <artifactId>lie-server-consumer</artifactId>
+    <artifactId>lie-server-comment</artifactId>
     <version>${project.parent.version}</version>
     <packaging>jar</packaging>
 
-    <name>lie-server-consumer</name>
+    <name>lie-server-comment</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
