@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class LieServerConsumerApplication {
+public class LieServerCommentApplication {
 
     @Bean
     @LoadBalanced
@@ -21,6 +21,6 @@ public class LieServerConsumerApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(LieServerConsumerApplication.class, args);
+        SpringApplication.run(LieServerCommentApplication.class, args);
     }
 }

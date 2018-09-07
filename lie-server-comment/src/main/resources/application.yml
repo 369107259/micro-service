@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: lie-server-comment
+  datasource:
+    url: jdbc:mysql://39.107.253.236:3306/library?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 2101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/

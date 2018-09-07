@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: lie-server-consumer
-server:
-  port: 2101
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:1001/eureka/
