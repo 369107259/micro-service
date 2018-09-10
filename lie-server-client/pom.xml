@@ -7,12 +7,11 @@
         <groupId>abort.cloud</groupId>
         <artifactId>micro-service</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/>
     </parent>
 
     <groupId>com.cn</groupId>
     <artifactId>lie-server-client</artifactId>
-    <version>${project.parent.version}</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>lie-server-client</name>
