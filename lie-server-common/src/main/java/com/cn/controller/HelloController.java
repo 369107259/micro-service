@@ -11,11 +11,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class HelloController {
 
-    @Autowired
-    private RestTemplate restTemplate;
-
     @GetMapping("/consumer")
     public String hello(){
-        return  restTemplate.getForObject("http://lie-server-client/hello",String.class);
+        return  "hello word!";
     }
 }

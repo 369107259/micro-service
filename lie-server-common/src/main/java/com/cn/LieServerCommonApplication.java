@@ -14,12 +14,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class LieServerCommonApplication {
 
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate(){
-        return  new RestTemplate();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(LieServerCommonApplication.class, args);
     }
