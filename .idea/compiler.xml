@@ -11,6 +11,7 @@
         <module name="lie-eureka-feign" />
         <module name="lie-hystrix-dashboard" />
         <module name="lie-server-client" />
+        <module name="lie-server-common" />
         <module name="lie-server-eureka" />
         <module name="lie-turbine" />
         <module name="lie-zipkin-server" />
