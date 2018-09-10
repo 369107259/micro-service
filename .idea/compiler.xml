@@ -11,7 +11,6 @@
         <module name="lie-eureka-feign" />
         <module name="lie-hystrix-dashboard" />
         <module name="lie-server-client" />
-        <module name="lie-server-common" />
         <module name="lie-server-eureka" />
         <module name="lie-turbine" />
         <module name="lie-zipkin-server" />
@@ -20,6 +19,7 @@
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="lie-eureka-consumer" target="1.8" />
+      <module name="lie-server-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
