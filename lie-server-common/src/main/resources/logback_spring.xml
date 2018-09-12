@@ -8,7 +8,7 @@
     <property name="CONSOLE_LOG_PATTERN"
               value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr([${springAppName:-},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}]){yellow} %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
     <!-- 控制台Appender -->
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <!--ThresholdFilter为系统定义的拦截器，例如我们用ThresholdFilter来过滤掉INFO级别以下的日志不输出到文件中-->
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>DEBUG</level>
@@ -51,16 +51,16 @@
         </encoder>
     </appender>
 
-    <root level="DEBUG">
-        <appender-ref ref="console"/>
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="logstash"/>
     </root>
     <logger name="com.cn" level="DEBUG" additivity="false">
         <appender-ref ref="logstash" />
-        <appender-ref ref="console" />
+        <appender-ref ref="CONSOLE" />
     </logger>
     <logger name="org.springframework" level="DEBUG" additivity="false">
         <appender-ref ref="logstash" />
-        <appender-ref ref="console" />
+        <appender-ref ref="CONSOLE" />
     </logger>
 </configuration>
