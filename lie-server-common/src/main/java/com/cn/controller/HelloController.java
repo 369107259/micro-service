@@ -20,6 +20,7 @@ public class HelloController {
         return  "hello word!";
     }
 
+    @GetMapping("/user")
     public String getUser(Long id){
         User user = userService.selectByPrimaryKey(id);
         return  user.getUserName();
