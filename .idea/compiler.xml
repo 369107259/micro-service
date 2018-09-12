@@ -20,6 +20,7 @@
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="lie-eureka-consumer" target="1.8" />
+      <module name="lie-server-consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
