@@ -3,6 +3,7 @@ package com.cn.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,6 +21,7 @@ import java.sql.SQLException;
  * @CreateTime 2018/9/11 17:49
  **/
 @Configuration
+@MapperScan("com.cn.mapper")
 public class DruidConfig {
     private static final Logger logger = LoggerFactory.getLogger(DruidConfig.class);
     @Value("${spring.datasource.url}")
