@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+
 /***
  * @author
  */
@@ -25,4 +27,10 @@ public class HelloController {
         User user = userService.selectByPrimaryKey(id);
         return  user.getUserName();
     }
+    @GetMapping(value = "/findAll")
+    public List<User> findAll(){
+        List<User> list = userService.findAll();
+        return list;
+    }
+
 }

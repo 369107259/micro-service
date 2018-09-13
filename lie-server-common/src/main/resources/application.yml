@@ -31,6 +31,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1001/eureka/
-mybatis:
-  mapper-locations:  classpath:mapper/*.xml
-  type-aliases-package: com.cn.entity
+#mybatis:
+#  mapper-locations:  classpath:mapper/*.xml
+#  type-aliases-package: com.cn.entity
+
+pagehelper:
+  reasonable: true
+  row-bounds-with-count: true
+  offset-as-page-num: true
+  params: count=countSql
