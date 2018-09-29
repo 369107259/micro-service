@@ -19,7 +19,7 @@ public class HelloController {
 
     @GetMapping("/consumer")
     public String hello(){
-        return  "hello word!";
+        return  "hello word!=======";
     }
 
     @GetMapping("/user")
