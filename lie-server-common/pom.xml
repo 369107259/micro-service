@@ -32,9 +32,9 @@
             <version>${eureka.starter.version}</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>net.logstash.logback</groupId>-->
-            <!--<artifactId>logstash-logback-encoder</artifactId>-->
-            <!--<version>${logstash.logback.version}</version>-->
+        <!--<groupId>net.logstash.logback</groupId>-->
+        <!--<artifactId>logstash-logback-encoder</artifactId>-->
+        <!--<version>${logstash.logback.version}</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
