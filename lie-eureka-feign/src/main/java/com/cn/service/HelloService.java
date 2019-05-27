@@ -1,18 +1,15 @@
 package com.cn.service;
 
-import com.cn.client.IHelloClient;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /***
- * @author  huangyong
+ * @author huangyong
  */
-@Service
-public class HelloService {
-    @Autowired
-    private IHelloClient helloClient;
-
-    public String consumer() {
-       return helloClient.consumer();
-    }
+@FeignClient("lie-server-client")
+public interface HelloService {
+    @RequestMapping("/hello")
+    String hello(@RequestParam("name")String name);
 }

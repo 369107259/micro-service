@@ -29,14 +29,4 @@ public class LieServerClientApplication {
 //        //启动项目
 //        new SpringApplicationBuilder(LieServerClientApplication.class).properties("server.port=" + port).run(args);
     }
-
-    @Slf4j
-    @RestController
-    static class TestController {
-        @GetMapping("/hello")
-        public String hello(@RequestParam String name) {
-            log.info("invoked name = " + name);
-            return "hello " + name;
-        }
-    }
 }
